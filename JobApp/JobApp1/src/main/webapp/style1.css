@@ -1,0 +1,71 @@
+body {
+    background-color: #007bff; /* Bootstrap primary blue */
+    font-family: 'Roboto', sans-serif; /* Modern font for clean design */
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/* Oval Box Container */
+.oval-box-container {
+    display: flex;
+    justify-content: center; /* Center the boxes horizontally */
+    gap: 20px; /* Add space between boxes */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-top: 30px;
+}
+
+/* Oval Box */
+.oval-box {
+    position: relative;
+    width: 280px; /* Adjusted for consistency */
+    height: 180px; /* Adjusted for proportion */
+    background: linear-gradient(145deg, #71816d, #5d6a59); /* Subtle gradient */
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Depth effect */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.oval-box:hover {
+    background: linear-gradient(145deg, #0056b3, #004092); /* Stylish gradient on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Text Styles */
+.oval-box h3 {
+    font-size: 20px; /* Adjust font size */
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px; /* Slight spacing for modern look */
+}
+
+.oval-box p {
+    font-size: 14px;
+    margin-top: 8px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.8); /* Slightly lighter text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .oval-box {
+        width: 220px; /* Adjust for smaller screens */
+        height: 150px;
+    }
+
+    .oval-box h3 {
+        font-size: 18px;
+    }
+
+    .oval-box p {
+        font-size: 12px;
+    }
+}
